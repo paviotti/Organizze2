@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "917868720793",
+    "project_id": "organizze-cbbd4",
+    "storage_bucket": "organizze-cbbd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917868720793:android:36feb2389d1c4821157e08",
+        "android_client_info": {
+          "package_name": "com.paviotti.organizze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917868720793-bk8sd873hre1s7s9b9d93787jk2005vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paviotti.organizze",
+            "certificate_hash": "5d647de78031b2c440bd3a1f8b2a3ab99c5d8693"
+          }
+        },
+        {
+          "client_id": "917868720793-02p8hvb1q03cgc1enl7ujtavb6upomlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfVkJrTbpxT3el4eGt-_uApQITnbqMCPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917868720793-02p8hvb1q03cgc1enl7ujtavb6upomlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
