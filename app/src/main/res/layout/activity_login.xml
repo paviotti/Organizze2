@@ -4,67 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.LoginActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtAcesseConta"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="Crie sua conta grátis"
+        android:text="Acesse sua conta"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/editeEmailAcessar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/editSenhaAcessar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Junte-se a mais de meio milhão\n de pessoas comece já"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrarConta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/editeEmailAcessar" />
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnEntrarConta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
         android:background="@color/purple_200"
-        android:onClick="btnCadastrar"
-        android:text="Cadastre-se"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/btnEntrar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:onClick="btnEntrar"
-        android:text="Já tenho conta"
-        android:textAlignment="center"
+        android:text="Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaAcessar" />
 
+    <EditText
+        android:id="@+id/editeEmailAcessar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editSenhaAcessar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcesseConta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
